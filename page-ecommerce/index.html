@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <title>Ecommerce</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, p {
+    margin: 0;
+  }
+
+  body {
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+
+  .titleAndMenu {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+  }
+
+  .titleAndMenu h1 {
+    font-weight: 700;
+  }
+
+  .titleAndMenu p {
+    cursor: pointer;
+  }
+
+  .titleAndMenu p:hover {
+    color: red;
+  }
+
+  .header {
+    border-bottom: 1px solid black;
+  }
+
+  .header header {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #imageAvatar {
+    max-width: 45px;
+    margin-left: 0.75rem;
+  }
+
+  #imageSneaker {
+    max-width: 430px;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+  }
+
+  .groupImages img {
+    max-width: 80px;
+    border-radius: 10px;
+  }
+
+  .groupImages {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .contentSneaker {
+    display: flex;
+    gap: 7rem;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .title h2 {
+    color: hsl(26, 100%, 55%) ;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 3rem;
+  }
+
+  .title h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+  }
+
+  .prices {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .descriptionAndPrices {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .button button {
+    display: flex;
+    gap: 1rem;
+    border: 0;
+    background-color: hsl(26, 100%, 55%);
+    color: #fff;
+    font-weight: 700 ;
+    padding: 0.75rem 3rem;
+    border-radius: 0.5rem;
+  }
+
+  .buttonCounter button {
+    border: 0;
+    padding: 0.5rem;
+    background-color: hsl(220, 14%, 75%);
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin: 0;
+  }
+
+  .buttonCounter input {
+    border: 0;
+    padding: 0.5rem;
+    background-color: hsl(220, 14%, 75%);
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin: 0;
+    width: 6rem;
+    color: #000;
+    text-align: center;
+  }
+
+  .buttonCounter {
+    display: flex;
+  }
+
+
+</style>
+<body>
+  <div class="header">
+    <header class="container">
+      <div class="titleAndMenu">
+        <h1>sneakers</h1>
+        <p>Colletion</p>
+        <p>Men</p>
+        <p>Women</p>
+        <p>About</p>
+        <p>Contact</p>
+      </div>
+      <div class="avatarAndCart">
+        <img src="./images/iconCartBlack.svg" alt="">
+        <img src="./images/image-avatar.png" alt="" id="imageAvatar">
+      </div>
+    </header>
+  </div>
+  <div class="container mt-5">
+    <div class="contentSneaker">
+      <div class="imagesSneakers">
+        <img src="./images/image-product-1.jpg" alt="" id="imageSneaker">
+        <div class="groupImages">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="">
+          <img src="./images/image-product-3-thumbnail.jpg" alt="">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+      </div>
+      <div class="descriptionProduct">
+        <div class="title">
+          <h2>SNEAKER COMPANY</h2>
+          <h1>Fall Limited Edition Sneakers</h1>
+        </div>
+        <div class="descriptionAndPrices">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+            type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+            essentially unchanged.
+          </p>
+          <div class="pricesAndButton">
+            <div>
+              <div class="prices">
+                <h1>$125.00</h1>
+                <p>50%</p>
+              </div>
+              <s>$250.00</s>
+            </div>
+            <div class="buttons">
+              <div class="buttonCounter">
+                <button onclick="pegaValorInput('menos')" >-</button>
+                <input type="text" value="0" disabled id="inputCount">
+                <button onclick="pegaValorInput('mais')">+</button>
+              </div>
+              <div class="button">
+                <button>
+                  <img src="./images/iconCarWhite.svg" alt="">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function pegaValorInput(valorBotao){
+      let inputCount = document.getElementById('inputCount')
+
+      if(valorBotao == 'mais') {
+        inputCount.value = parseInt(inputCount.value) + 1
+      }
+
+      if(valorBotao == 'menos' && inputCount.value > 0) {
+        inputCount.value = parseInt(inputCount.value) - 1
+      }
+    }
+
+  </script>
+</body>
+</html>

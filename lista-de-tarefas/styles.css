@@ -1,0 +1,105 @@
+:root {
+    --background-color: #F6F6F6;
+    --primary-color: #1B3B48;
+    --white: #fff;
+    --grey: #E7E7E7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+    background: var(--background-color);
+    --webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+textarea,
+button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+button {
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}
+
+[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.header {
+    background-color: var(--primary-color);
+}
+
+.header header {
+    display: flex;
+    justify-content: center;
+    padding: 7rem 0;
+}
+
+.header header h1 {
+    color: var(--white);
+    font-size: 3rem;
+}
+
+.cardTodo {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: -2rem;
+    
+}
+
+.cardBody {
+    margin-top: 2rem;
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--primary-color);
+    padding: 1rem 0;
+}
+
+.cardHeader button {
+    border: 0;
+    background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    color: var(--white);
+    font-weight: 700;
+    border-radius: 0.25rem;
+}
+
+.linhaCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+
+}
+
+.nameAndDescription {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}

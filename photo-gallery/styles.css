@@ -1,0 +1,98 @@
+:root {
+    --background-color: #F6F6F6;
+    --primary-color: #1B3B48;
+    --white: #fff;
+    --grey: #E7E7E7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+    background: var(--background-color);
+    --webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+textarea,
+button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+button {
+    cursor: pointer;
+}
+
+[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.header {
+    background-color: var(--primary-color);
+}
+
+.header header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.75rem 0;
+}
+
+.header header h1 {
+    color: var(--white);
+}
+
+.inputGroup {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.inputGroup input {
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.inputGroup button {
+    border: 0;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--white);
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.content-images {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.content-pagina-especifica {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.content-pagina-especifica img {
+    max-width: 600px;
+}
